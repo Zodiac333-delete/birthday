@@ -7,11 +7,17 @@
 	<link rel="stylesheet" href="https://bootstrapcdn.com">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://googleapis.com" rel="stylesheet" type="text/css">
+	<style>
+		.cake { display: none; position: relative; width: 200px; height: 170px; margin: 20px auto 0; }
+		.bizcocho { position: absolute; bottom: 0; left: 20px; width: 160px; height: 80px; background: #6d3826; border-radius: 12px 12px 6px 6px; box-shadow: inset 0 -16px 0 #53291b, inset 0 16px 0 #8a4933; }
+		.cobertura { position: absolute; bottom: 66px; left: 15px; width: 170px; height: 28px; background: #fff0f5; border-radius: 14px; box-shadow: 0 5px 0 #ffccd5; }
+		.velas { position: absolute; bottom: 92px; left: 93px; width: 14px; height: 42px; background: repeating-linear-gradient(45deg, #fff, #fff 5px, #ff4d6d 5px, #ff4d6d 10px); border-radius: 3px; }
+		.fuego { display: none; position: absolute; top: -26px; left: -2px; width: 18px; height: 26px; background: radial-gradient(circle, #fff 15%, #ffd166 55%, #f77f00 90%); border-radius: 50% 50% 35% 35%; box-shadow: 0 0 20px #ffd166, 0 0 40px #ff9e00; animation: flicker 0.35s infinite alternate; }
+		@keyframes flicker { from { transform: scale(0.95) rotate(-3deg); } to { transform: scale(1.05) rotate(3deg); } }
+	</style>
 </head>
 <body>
-	<audio class="song" controls loop>
-		<source src="hbd.mp3"></source>
-	</audio>
+	<audio class="song" controls loop><source src="hbd.mp3"></source></audio>
 	<div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">Т</h2></div>
 	<div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">А</h2></div>
 	<div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">Т</h2></div>
@@ -29,15 +35,13 @@
 			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_pink"></div></div>
 			<div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_orange"></div></div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
-			</div>
-		</div>
+		<div class="row"><div class="col-md-12 text-center"><img src="banner.png" class="bannar"></div></div>
 		<div class="row cake-cover">
 			<div class="col-md-12 text-center">
 				<div class="cake">
-					<img src="cake128.png" style="width: 180px; margin: 20px auto; display: block;">
+					<div class="velas"><div class="fuego"></div></div>
+					<div class="cobertura"></div>
+					<div class="bizcocho"></div>
 				</div>
 			</div>
 		</div>
